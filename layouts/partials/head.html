@@ -1,5 +1,7 @@
 <head>
 <title>{{.Title}}</title>
+{{ template "_internal/google_analytics.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}
 
 {{ $description := .Params.description}}
 {{if .IsHome}}
